@@ -21,7 +21,7 @@ main {
   margin: 0;
   z-index: 1;
   max-width: 25%;
-  margin-top: 3rem;
+
 }
 .deslizador .deslizador-container, .deslizador-container2 .deslizador2{
   display: flex;
@@ -69,8 +69,7 @@ padding-bottom: 5%;
 
 .deslizador-indicador, .deslizador-indicador2 {
   text-align: center; /* Centra los indicadores horizontalmente */
-  margin-top: 10px; /* Espacio entre las imágenes y los indicadores */
-  margin-bottom: 10px;
+
 }
 
 .indicador, indicador2 {
@@ -126,7 +125,7 @@ padding-bottom: 5%;
   bottom: 100px;
   padding-left: 50px;
   color: #ffffff;
-  margin-bottom: -30px;
+  margin-bottom: 20px;
 }
 .txt-arriba-carrusel2{
   padding-left: 50px;
@@ -283,12 +282,6 @@ padding-bottom: 5%;
 /* Rectangle 30 */
 
 
-.deslizador-indicador2 {
-  text-align: center; /* Centra los indicadores horizontalmente */
-  margin-top: 10px; /* Espacio entre las imágenes y los indicadores */
-  margin-bottom: 10px;
-}
-
 .indicador2 {
   width: 10px; /* Tamaño del puntito */
   height: 10px;
@@ -395,5 +388,22 @@ padding-bottom: 5%;
   .indicador2 {
     width: 8px;
     height: 8px;
+  }
+  h2.txt-arriba-carrusel, h2.txt-arriba-carrusel2{
+    font-size: 12px;
+    margin-top: 0px;
+
+  }
+  div.super-contenedor-chico2{
+    margin-top: 108%;
+  }
+  div#contenedor3{
+    margin-top: 148%;
+  }
+  div#contenedor4{
+    margin-top: 188%;
+  }
+  div#contenedor5{
+    margin-top: 228%;
   }
 }

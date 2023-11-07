@@ -14,7 +14,6 @@ btnMenu.addEventListener("click", function () {
   } else {
     logoMenu.style.transform = "rotate(90deg)";
   }
-
   rotado = !rotado;
 })
 

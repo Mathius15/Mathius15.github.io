@@ -1,32 +1,98 @@
 body {
-  margin: 0;
+  margin: 0 auto; 
   padding: 0;
-  width: 1280px;
+  max-width: 1280px;
   height: 8968px;
+
 }
 
-.box .rectangle {
-  background: linear-gradient(
-    180deg,
-    rgb(84, 153, 248) 0%,
-    rgb(84, 153, 248) 87.91%,
-    rgba(84, 153, 248, 0) 100%
-  );
-  height: 227px;
-  left: 0;
-  position: fixed;
-  top: 0;
+html{
   width: 1280px;
 }
 
-.contenedor {
-  position: relative;
-}
-
-.img-cielo1 {
+/*contenedor de la primera foto con la foto de fondo del cielo*/
+.contenedor-img-cielo{
+  margin-top: 126px;
+  background: url(./imagenes/cielo1.png), lightgray 50% / cover no-repeat;
   width: 1280px;
   height: 720px;
-  position: absolute;
-  top: 126px;
+  z-index: 1;
   left: 0;
+
+}
+
+#contenedor-header{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+
+  top: 0;
+  width: 1280px;
+  height: 227px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
+}
+
+#img-menu{
+  margin-top: 20px;
+  width: 34px;
+  height: 26px;
+  flex-shrink: 0;
+
+}
+/*la foto de spidey Amazing friends*/
+#img-logo{
+  margin-top: 17px;
+  width: 590px;
+  height: 301px;
+  flex-shrink: 0;
+
+}
+#btn-comprar{
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 111px;
+  border: 8px solid var(--2982-ff, #2982FF);
+  background: #FFE901;
+
+  /* Drop Shadow */
+  box-shadow: 4px 5px 0px 0px #02187E;
+}
+
+/*texto que dice comprar del boton*/
+#btn-comprar p{
+  margin: 0;
+  text-align: center;
+  color: #02187E;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 94.5%; /* 18.9px */
+
+}
+/*tres imagenes svg de los 3 edificios con sus estilos para acomodar tamaño*/
+#img-edificio1{
+  margin: 0;
+  width: 452px;
+  height: 720px;
+  filter: blur(3.5px);
+  margin-left: -47px;
+}
+
+#img-edificio2{
+  width: 543.5px;
+  height: 213.5px;
+  filter: blur(3.5px);
+  margin: 0px;
+}
+
+/*posicion absoluta y left 906 porque sino se bajaba en vez de quedar al lado de los demas edificios*/
+#img-edificio3{
+  position: absolute;
+  left: 906px;
+  width: 374px;
+  height: 727.5px;
 }

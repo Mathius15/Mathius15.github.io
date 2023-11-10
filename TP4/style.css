@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 1280px;
+  height: 8968px;
+}
+
+.box .rectangle {
+  background: linear-gradient(
+    180deg,
+    rgb(84, 153, 248) 0%,
+    rgb(84, 153, 248) 87.91%,
+    rgba(84, 153, 248, 0) 100%
+  );
+  height: 227px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 1280px;
+}
+
+.contenedor {
+  position: relative;
+}
+
+.img-cielo1 {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  top: 126px;
+  left: 0;
+}

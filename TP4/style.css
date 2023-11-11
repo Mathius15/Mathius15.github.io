@@ -96,3 +96,49 @@ html{
   width: 374px;
   height: 727.5px;
 }
+
+.img-spiders{
+  position: absolute;
+}
+#img-spider1{
+  top: 335px;
+  left: 695px;
+  width: 393px;
+  height: 393px;
+  flex-shrink: 0;
+}
+#img-spider2{
+  top: 403px;
+  left: 404px;
+  width: 465px;
+  height: 465px;
+  flex-shrink: 0;
+}
+
+#img-spider3{
+  left: 90px;
+  top: 388px;
+  width: 360px;
+  height: 444px;
+  flex-shrink: 0;
+}
+
+#img-telaraña1{
+  position: absolute;
+  top: 374px;
+  left: 387.99px;
+  width: 450.817px;
+  height: 627.274px;
+  margin-left: -291px;
+
+
+}
+#img-telaraña2{
+  position: absolute;
+  top: 388px;
+  left: 981px;
+  width: 256.659px;
+  height: 372.442px;
+
+  margin-right: -146px;
+}

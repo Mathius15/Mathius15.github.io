@@ -3,7 +3,7 @@ body {
   padding: 0;
   max-width: 1280px;
   height: 8968px;
-
+  overflow-x: hidden;
 }
 
 html{
@@ -12,11 +12,13 @@ html{
 
 /*contenedor de la primera foto con la foto de fondo del cielo*/
 .contenedor-img-cielo{
-  margin-top: 126px;
+  position: absolute;
+  top: 126px;
+
   background: url(./imagenes/cielo1.png), lightgray 50% / cover no-repeat;
   width: 1280px;
   height: 720px;
-  z-index: 1;
+  z-index: 100;
   left: 0;
 
 }
@@ -42,6 +44,7 @@ html{
 }
 /*la foto de spidey Amazing friends*/
 #img-logo{
+  
   margin-top: 17px;
   width: 590px;
   height: 301px;
@@ -75,6 +78,8 @@ html{
 }
 /*tres imagenes svg de los 3 edificios con sus estilos para acomodar tamaño*/
 #img-edificio1{
+  position: absolute;
+  top: 144px;
   margin: 0;
   width: 452px;
   height: 720px;
@@ -83,6 +88,9 @@ html{
 }
 
 #img-edificio2{
+  position: absolute;
+  top: 634px;
+  left: 392px;
   width: 543.5px;
   height: 213.5px;
   filter: blur(3.5px);
@@ -92,6 +100,7 @@ html{
 /*posicion absoluta y left 906 porque sino se bajaba en vez de quedar al lado de los demas edificios*/
 #img-edificio3{
   position: absolute;
+  top: 126px;
   left: 906px;
   width: 374px;
   height: 727.5px;
@@ -113,6 +122,7 @@ html{
   width: 465px;
   height: 465px;
   flex-shrink: 0;
+  z-index: 100;
 }
 
 #img-spider3{
@@ -126,19 +136,48 @@ html{
 #img-telaraña1{
   position: absolute;
   top: 374px;
-  left: 387.99px;
   width: 450.817px;
   height: 627.274px;
-  margin-left: -291px;
-
-
+  margin-left: -181px;
+  z-index: 100;
 }
+
 #img-telaraña2{
   position: absolute;
   top: 388px;
   left: 981px;
-  width: 256.659px;
+  width: 298.659px;
   height: 372.442px;
+  overflow:hidden;
+}
 
-  margin-right: -146px;
+/*css segundo contenedor (violeta)*/
+#cont-duende{
+  position: absolute;
+  top: 775px;
+  width: 1280px;
+  height: 844.5px;
+
+  fill: #8F6AA6;
+}
+
+#img-duende{
+  position: absolute;
+
+  left: 712px;
+  width: 553px;
+  height: 921px;
+  flex-shrink: 0;
+}
+#cont-duende h1{
+  position: absolute;
+
+  left: 95px;
+  z-index: 99;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 94.5%; /* 56.7px */
 }

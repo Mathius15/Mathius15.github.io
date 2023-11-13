@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   width: 1280px;
@@ -29,4 +30,187 @@ body {
   position: absolute;
   top: 126px;
   left: 0;
+=======
+  margin: 0 auto; 
+  padding: 0;
+  max-width: 1280px;
+  height: 8968px;
+  overflow-x: hidden;
+}
+
+html{
+  width: 1280px;
+}
+
+/*contenedor de la primera foto con la foto de fondo del cielo*/
+.contenedor-img-cielo{
+  position: absolute;
+  top: 126px;
+
+  background: url(./imagenes/cielo1.png), lightgray 50% / cover no-repeat;
+  width: 1280px;
+  height: 720px;
+  z-index: 100;
+  left: 0;
+
+}
+
+#contenedor-header{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+
+  top: 0;
+  width: 1280px;
+  height: 227px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
+}
+
+#img-menu{
+  margin-top: 20px;
+  width: 34px;
+  height: 26px;
+  flex-shrink: 0;
+
+}
+/*la foto de spidey Amazing friends*/
+#img-logo{
+  
+  margin-top: 17px;
+  width: 590px;
+  height: 301px;
+  flex-shrink: 0;
+
+}
+#btn-comprar{
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 111px;
+  border: 8px solid var(--2982-ff, #2982FF);
+  background: #FFE901;
+
+  /* Drop Shadow */
+  box-shadow: 4px 5px 0px 0px #02187E;
+}
+
+/*texto que dice comprar del boton*/
+#btn-comprar p{
+  margin: 0;
+  text-align: center;
+  color: #02187E;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 94.5%; /* 18.9px */
+
+}
+/*tres imagenes svg de los 3 edificios con sus estilos para acomodar tamaño*/
+#img-edificio1{
+  position: absolute;
+  top: 144px;
+  margin: 0;
+  width: 452px;
+  height: 720px;
+  filter: blur(3.5px);
+  margin-left: -47px;
+}
+
+#img-edificio2{
+  position: absolute;
+  top: 634px;
+  left: 392px;
+  width: 543.5px;
+  height: 213.5px;
+  filter: blur(3.5px);
+  margin: 0px;
+}
+
+/*posicion absoluta y left 906 porque sino se bajaba en vez de quedar al lado de los demas edificios*/
+#img-edificio3{
+  position: absolute;
+  top: 126px;
+  left: 906px;
+  width: 374px;
+  height: 727.5px;
+}
+
+.img-spiders{
+  position: absolute;
+}
+#img-spider1{
+  top: 335px;
+  left: 695px;
+  width: 393px;
+  height: 393px;
+  flex-shrink: 0;
+}
+#img-spider2{
+  top: 403px;
+  left: 404px;
+  width: 465px;
+  height: 465px;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+#img-spider3{
+  left: 90px;
+  top: 388px;
+  width: 360px;
+  height: 444px;
+  flex-shrink: 0;
+}
+
+#img-telaraña1{
+  position: absolute;
+  top: 374px;
+  width: 450.817px;
+  height: 627.274px;
+  margin-left: -181px;
+  z-index: 100;
+}
+
+#img-telaraña2{
+  position: absolute;
+  top: 388px;
+  left: 981px;
+  width: 298.659px;
+  height: 372.442px;
+  overflow:hidden;
+}
+
+/*css segundo contenedor (violeta)*/
+#cont-duende{
+  position: absolute;
+  top: 775px;
+  width: 1280px;
+  height: 844.5px;
+
+  fill: #8F6AA6;
+}
+
+#img-duende{
+  position: absolute;
+
+  left: 712px;
+  width: 553px;
+  height: 921px;
+  flex-shrink: 0;
+}
+#cont-duende h1{
+  position: absolute;
+
+  left: 95px;
+  z-index: 99;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 94.5%; /* 56.7px */
+>>>>>>> 3aa86dcee9f0c111cf89e68d566596e76e6935f6
 }

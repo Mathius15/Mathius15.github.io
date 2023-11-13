@@ -1,36 +1,4 @@
 body {
-<<<<<<< HEAD
-  margin: 0;
-  padding: 0;
-  width: 1280px;
-  height: 8968px;
-}
-
-.box .rectangle {
-  background: linear-gradient(
-    180deg,
-    rgb(84, 153, 248) 0%,
-    rgb(84, 153, 248) 87.91%,
-    rgba(84, 153, 248, 0) 100%
-  );
-  height: 227px;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 1280px;
-}
-
-.contenedor {
-  position: relative;
-}
-
-.img-cielo1 {
-  width: 1280px;
-  height: 720px;
-  position: absolute;
-  top: 126px;
-  left: 0;
-=======
   margin: 0 auto; 
   padding: 0;
   max-width: 1280px;
@@ -58,8 +26,6 @@ html{
 #contenedor-header{
   display: flex;
   justify-content: space-around;
-  position: fixed;
-
   top: 0;
   width: 1280px;
   height: 227px;
@@ -76,12 +42,10 @@ html{
 }
 /*la foto de spidey Amazing friends*/
 #img-logo{
-  
-  margin-top: 17px;
+  margin-top: 1.01%;
   width: 590px;
   height: 301px;
   flex-shrink: 0;
-
 }
 #btn-comprar{
   margin-top: 20px;
@@ -111,7 +75,7 @@ html{
 /*tres imagenes svg de los 3 edificios con sus estilos para acomodar tamaño*/
 #img-edificio1{
   position: absolute;
-  top: 144px;
+  top: -83px;
   margin: 0;
   width: 452px;
   height: 720px;
@@ -120,8 +84,8 @@ html{
 }
 
 #img-edificio2{
+  top: 407px;
   position: absolute;
-  top: 634px;
   left: 392px;
   width: 543.5px;
   height: 213.5px;
@@ -132,7 +96,7 @@ html{
 /*posicion absoluta y left 906 porque sino se bajaba en vez de quedar al lado de los demas edificios*/
 #img-edificio3{
   position: absolute;
-  top: 126px;
+  top: -101px;
   left: 906px;
   width: 374px;
   height: 727.5px;
@@ -142,14 +106,14 @@ html{
   position: absolute;
 }
 #img-spider1{
-  top: 335px;
+  top: 108px;
   left: 695px;
   width: 393px;
   height: 393px;
   flex-shrink: 0;
 }
 #img-spider2{
-  top: 403px;
+  top: 176px;
   left: 404px;
   width: 465px;
   height: 465px;
@@ -159,7 +123,7 @@ html{
 
 #img-spider3{
   left: 90px;
-  top: 388px;
+  top: 161px;
   width: 360px;
   height: 444px;
   flex-shrink: 0;
@@ -167,7 +131,7 @@ html{
 
 #img-telaraña1{
   position: absolute;
-  top: 374px;
+  top: 148px;
   width: 450.817px;
   height: 627.274px;
   margin-left: -181px;
@@ -176,7 +140,7 @@ html{
 
 #img-telaraña2{
   position: absolute;
-  top: 388px;
+  top: 161px;
   left: 981px;
   width: 298.659px;
   height: 372.442px;
@@ -212,5 +176,4 @@ html{
   font-style: normal;
   font-weight: 600;
   line-height: 94.5%; /* 56.7px */
->>>>>>> 3aa86dcee9f0c111cf89e68d566596e76e6935f6
 }

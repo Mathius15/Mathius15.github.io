@@ -1,0 +1,32 @@
+/* Agrega tus estilos CSS existentes aquí */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Otros estilos... */
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.parallax-layer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform-origin: center center;
+}
+
+/* Otros estilos... */

@@ -1,15 +1,40 @@
-.hidden {
+.hiddenEdificios {
+  transform: translateY(100px);
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(-100%);
   transition: all 2s;
 }
 
-.show {
+.showEdificios {
+  transform: translateY(0px);
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0);
 }
+
+.hiddenArañas {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 3s;
+}
+
+.showArañas {
+  transform: translateY(0px);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.hiddenTelarañas {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 3s;
+}
+
+.showTelarañas {
+  transform: translateY(0px);
+  opacity: 1;
+  filter: blur(0);
+}
+
 
 
 

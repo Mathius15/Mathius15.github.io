@@ -1,32 +1,15 @@
-/* Agrega tus estilos CSS existentes aquí */
-
-body {
-    margin: 0;
-    padding: 0;
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
 }
 
-/* Otros estilos... */
-
-.parallax-container {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
-.parallax-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
-.parallax-layer img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transform-origin: center center;
-}
 
-/* Otros estilos... */

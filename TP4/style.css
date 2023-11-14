@@ -18,7 +18,6 @@ html{
   background: url(./imagenes/cielo1.png), lightgray 50% / cover no-repeat;
   width: 1280px;
   height: 720px;
-  z-index: 100;
   left: 0;
 
 }
@@ -42,10 +41,12 @@ html{
 }
 /*la foto de spidey Amazing friends*/
 #img-logo{
-  margin-top: 1.01%;
+  margin-left: 330px;
+  margin-top: -35px;
   width: 590px;
   height: 301px;
-  flex-shrink: 0;
+  display: flex;
+  position: absolute;
 }
 #btn-comprar{
   margin-top: 20px;
@@ -75,7 +76,7 @@ html{
 /*tres imagenes svg de los 3 edificios con sus estilos para acomodar tamaño*/
 #img-edificio1{
   position: absolute;
-  top: -83px;
+  top: 18px;
   margin: 0;
   width: 452px;
   height: 720px;
@@ -84,7 +85,7 @@ html{
 }
 
 #img-edificio2{
-  top: 407px;
+  top: 508px;
   position: absolute;
   left: 392px;
   width: 543.5px;
@@ -96,7 +97,7 @@ html{
 /*posicion absoluta y left 906 porque sino se bajaba en vez de quedar al lado de los demas edificios*/
 #img-edificio3{
   position: absolute;
-  top: -101px;
+  top: 0px;
   left: 906px;
   width: 374px;
   height: 727.5px;
@@ -105,69 +106,73 @@ html{
 .img-spiders{
   position: absolute;
 }
+
+
 #img-spider1{
-  top: 108px;
+  top: 209px;
   left: 695px;
   width: 393px;
   height: 393px;
   flex-shrink: 0;
 }
 #img-spider2{
-  top: 176px;
+  top: 277px;
   left: 404px;
   width: 465px;
   height: 465px;
   flex-shrink: 0;
-  z-index: 100;
+  z-index: 200;
 }
 
 #img-spider3{
+  top: 262px;
   left: 90px;
-  top: 161px;
   width: 360px;
   height: 444px;
   flex-shrink: 0;
 }
 
 #img-telaraña1{
-  position: absolute;
-  top: 148px;
+  top: 249px;
   width: 450.817px;
   height: 627.274px;
-  margin-left: -181px;
-  z-index: 100;
+  margin-left: -180px;
+  position: absolute;
+  z-index: 999;
 }
 
 #img-telaraña2{
-  position: absolute;
-  top: 161px;
-  left: 981px;
+  margin-top: 262px;
+  margin-left: 981px;
   width: 298.659px;
   height: 372.442px;
   overflow:hidden;
+  position: absolute;
+  z-index: 999;
 }
 
 /*css segundo contenedor (violeta)*/
 #cont-duende{
   position: absolute;
-  top: 775px;
+  top: 703.5px;
   width: 1280px;
   height: 844.5px;
-
   fill: #8F6AA6;
+  z-index: 99;
 }
 
 #img-duende{
   position: absolute;
-
+  top: 132px;
   left: 712px;
   width: 553px;
   height: 921px;
   flex-shrink: 0;
 }
+
 #cont-duende h1{
   position: absolute;
-
+  margin-top: 200px;
   left: 95px;
   z-index: 99;
   color: #FFF;

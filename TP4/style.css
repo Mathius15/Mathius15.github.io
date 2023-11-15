@@ -4,10 +4,12 @@ body {
   max-width: 1280px;
   height: 8968px;
   overflow-x: hidden;
+  background-color: #000;
 }
 
 html {
   width: 1280px;
+  background-color: #fff;
 }
 
 /*contenedor de la primera foto con la foto de fondo del cielo*/
@@ -235,28 +237,28 @@ html {
   position: absolute;
 }
 
-#txtpeter {
+#txt-peter {
   left: 100px;
 }
-#txtmiles {
+#txt-miles {
   left: 474px;
 }
-#txtgwen {
+#txt-gwen {
   left: 847px;
 }
 
-#historiapeter {
+#historia-peter {
   top: 368px;
   left: 100px;
   position: absolute;
 }
 
-#historiamiles {
+#historia-miles {
   top: 368px;
   left: 473px;
   position: absolute;
 }
-#historiagwen {
+#historia-gwen {
   top: 368px;
   left: 847px;
   position: absolute;
@@ -294,4 +296,175 @@ html {
   transform: rotate(-36.016deg);
   flex-shrink: 0;
   position: absolute;
+}
+/*--------------------------------------VENGADORES(quinto container)---------------------------------------*/
+#txt-vengadores {
+  top: 3166px;
+  left: 93px;
+  width: 667px;
+  height: 171px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 94.5%; /* 56.7px */
+  position: absolute;
+}
+#elastico {
+  top: 3399px;
+  left: 185px;
+  position: absolute;
+  width: 451.258px;
+  height: 591.442px;
+  transform: rotate(-12.483deg);
+  z-index: 3;
+}
+#blackpanter {
+  top: 3233px;
+  left: 612px;
+  width: 368.308px;
+  height: 552.462px;
+  transform: rotate(13.615deg);
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+#hulk {
+  left: 799px;
+  top: 3583px;
+  position: absolute;
+  width: 410.106px;
+  height: 437.972px;
+  transform: rotate(7.515deg);
+  z-index: 3;
+}
+
+.imagen-fondo {
+  position: absolute;
+}
+
+#vengadores-fondo3 {
+  left: 101px;
+  top: 3452px;
+  width: 1077.059px;
+  height: 527.626px;
+  z-index: 3;
+}
+#vengadores-fondo2 {
+  left: 101px;
+  top: 3452px;
+  width: 1077.059px;
+  height: 527.626px;
+  z-index: 2;
+}
+#vengadores-fondo1 {
+  left: 101px;
+  top: 3452px;
+  width: 1077.059px;
+  height: 527.626px;
+  z-index: 1;
+}
+
+/*----------------------------------------MAS AMIGOS MAS DIVERSION(sexto container)---------------------------*/
+
+#mas-amigos-fondo {
+  top: 3833.5px;
+  position: absolute;
+  width: 1280px;
+  height: 2194.5px;
+  flex-shrink: 0;
+}
+#mas-amigos1 {
+  top: 4213px;
+  left: 104px;
+  position: absolute;
+}
+
+#mas-amigos2 {
+  top: 4616px;
+  left: 108px;
+  position: absolute;
+}
+
+#mas-amigos3 {
+  top: 5042px;
+  left: 100px;
+  position: absolute;
+}
+#mas-amigos4 {
+  top: 5555px;
+  left: 104px;
+  position: absolute;
+}
+
+#mas-amigos h1,
+#mas-amigos p {
+  position: absolute;
+  left: 713px;
+}
+
+#mas-amigos h1 {
+  top: 4047px;
+  left: 104px;
+  position: absolute;
+  width: 802px;
+  color: #000;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 94.5%; /* 56.7px */
+  z-index: 999;
+}
+
+#mas-amigos p {
+  position: absolute;
+  width: 467px;
+  color: #000;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 94.5%; /* 18.9px */
+}
+#mas-amigos h2 {
+  left: 713px;
+  color: #000;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 94.5%; /* 37.8px */
+  position: absolute;
+}
+
+#mas-amigosh1 {
+  top: 4180px;
+  width: 467px;
+}
+#mas-amigosh2 {
+  top: 4583px;
+  width: 467px;
+}
+#mas-amigosh3 {
+  top: 5005px;
+  width: 467px;
+}
+#mas-amigosh4 {
+  top: 5522px;
+  width: 467px;
+}
+#mas-amigosp1 {
+  top: 4295px;
+}
+#mas-amigosp2 {
+  top: 4698px;
+}
+#mas-amigosp3{
+  top: 5158px;
+}
+#mas-amigosp4{
+  top: 5637px;
 }

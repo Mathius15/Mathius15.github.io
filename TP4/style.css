@@ -1,17 +1,17 @@
 body {
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0;
   max-width: 1280px;
   height: 8968px;
   overflow-x: hidden;
 }
 
-html{
+html {
   width: 1280px;
 }
 
 /*contenedor de la primera foto con la foto de fondo del cielo*/
-.contenedor-img-cielo{
+.contenedor-img-cielo {
   position: absolute;
   top: 126px;
 
@@ -19,28 +19,31 @@ html{
   width: 1280px;
   height: 720px;
   left: 0;
-
 }
 
-#contenedor-header{
+#contenedor-header {
   display: flex;
   justify-content: space-around;
   top: 0;
   width: 1280px;
   height: 227px;
   flex-shrink: 0;
-  background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
+  background: linear-gradient(
+    180deg,
+    #5499f8 0%,
+    #5499f8 87.91%,
+    rgba(84, 153, 248, 0) 100%
+  );
 }
 
-#img-menu{
+#img-menu {
   margin-top: 20px;
   width: 34px;
   height: 26px;
   flex-shrink: 0;
-
 }
 /*la foto de spidey Amazing friends*/
-#img-logo{
+#img-logo {
   margin-left: 330px;
   margin-top: -35px;
   width: 590px;
@@ -48,33 +51,32 @@ html{
   display: flex;
   position: absolute;
 }
-#btn-comprar{
+#btn-comprar {
   margin-top: 20px;
   width: 200px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 111px;
-  border: 8px solid var(--2982-ff, #2982FF);
-  background: #FFE901;
+  border: 8px solid var(--2982-ff, #2982ff);
+  background: #ffe901;
 
   /* Drop Shadow */
-  box-shadow: 4px 5px 0px 0px #02187E;
+  box-shadow: 4px 5px 0px 0px #02187e;
 }
 
 /*texto que dice comprar del boton*/
-#btn-comprar p{
+#btn-comprar p {
   margin: 0;
   text-align: center;
-  color: #02187E;
+  color: #02187e;
 
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
   line-height: 94.5%; /* 18.9px */
-
 }
 /*tres imagenes svg de los 3 edificios con sus estilos para acomodar tamaño*/
-#img-edificio1{
+#img-edificio1 {
   position: absolute;
   top: 18px;
   margin: 0;
@@ -84,7 +86,7 @@ html{
   margin-left: -47px;
 }
 
-#img-edificio2{
+#img-edificio2 {
   top: 508px;
   position: absolute;
   left: 392px;
@@ -95,7 +97,7 @@ html{
 }
 
 /*posicion absoluta y left 906 porque sino se bajaba en vez de quedar al lado de los demas edificios*/
-#img-edificio3{
+#img-edificio3 {
   position: absolute;
   top: 0px;
   left: 906px;
@@ -103,19 +105,18 @@ html{
   height: 727.5px;
 }
 
-.img-spiders{
+.img-spiders {
   position: absolute;
 }
 
-
-#img-spider1{
+#img-spider1 {
   top: 209px;
   left: 695px;
   width: 393px;
   height: 393px;
   flex-shrink: 0;
 }
-#img-spider2{
+#img-spider2 {
   top: 277px;
   left: 404px;
   width: 465px;
@@ -124,7 +125,7 @@ html{
   z-index: 200;
 }
 
-#img-spider3{
+#img-spider3 {
   top: 262px;
   left: 90px;
   width: 360px;
@@ -132,7 +133,7 @@ html{
   flex-shrink: 0;
 }
 
-#img-telaraña1{
+#img-telaraña1 {
   top: 249px;
   width: 450.817px;
   height: 627.274px;
@@ -141,44 +142,156 @@ html{
   z-index: 999;
 }
 
-#img-telaraña2{
+#img-telaraña2 {
   margin-top: 262px;
   margin-left: 981px;
   width: 298.659px;
   height: 372.442px;
-  overflow:hidden;
+  overflow: hidden;
   position: absolute;
   z-index: 999;
 }
 
-/*css segundo contenedor (violeta)*/
-#cont-duende{
+/*---------------------css segundo contenedor del duende verde(violeta)--------------------*/
+#cont-duende {
   position: absolute;
-  top: 703.5px;
+  top: 775px;
   width: 1280px;
   height: 844.5px;
-  fill: #8F6AA6;
+  fill: #8f6aa6;
   z-index: 99;
 }
 
-#img-duende{
+#img-duende {
   position: absolute;
-  top: 132px;
+  top: 0px;
   left: 712px;
   width: 553px;
   height: 921px;
   flex-shrink: 0;
+  z-index: 1;
 }
 
-#cont-duende h1{
+#cont-duende h1 {
+  width: 646px;
+  height: 114px;
   position: absolute;
-  margin-top: 200px;
-  left: 95px;
+  margin-top: 219px;
+  left: 83px;
   z-index: 99;
-  color: #FFF;
+  color: #fff;
   font-family: Lato;
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
   line-height: 94.5%; /* 56.7px */
+}
+
+#cont-duende p {
+  top: 337px;
+  left: 84px;
+  width: 586px;
+  height: 154px;
+  position: absolute;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*-----------------------HISTORIAS DE LOS SPIDERS(tercer contenedor)---------------------*/
+#game1 {
+  left: 87px;
+  top: 537px;
+  position: absolute;
+  transform: rotate(-2.222deg);
+  flex-shrink: 0;
+  z-index: 0;
+}
+
+#div-historias {
+  top: 1472px;
+  width: 1280px;
+  height: 1085px;
+  flex-shrink: 0;
+  background: #ffffff;
+  position: absolute;
+}
+
+#div-historias p {
+  top: 680px;
+  width: 333px;
+  height: 218px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+}
+
+#txtpeter {
+  left: 100px;
+}
+#txtmiles {
+  left: 474px;
+}
+#txtgwen {
+  left: 847px;
+}
+
+#historiapeter {
+  top: 368px;
+  left: 100px;
+  position: absolute;
+}
+
+#historiamiles {
+  top: 368px;
+  left: 473px;
+  position: absolute;
+}
+#historiagwen {
+  top: 368px;
+  left: 847px;
+  position: absolute;
+}
+
+/*------------------------------GHOST SPIDER(cuarto contenedor)---------------------------------*/
+#ghostspider {
+  top: 2497px;
+  position: absolute;
+}
+
+#race1 {
+  top: -99px;
+  left: 69px;
+  width: 546.108px;
+  height: 326.509px;
+  transform: rotate(-13.078deg);
+  flex-shrink: 0;
+  position: absolute;
+}
+
+#race2 {
+  top: 84px;
+  left: 68px;
+  width: 543.218px;
+  height: 325.787px;
+  transform: rotate(-26.474deg);
+  position: absolute;
+}
+#race3 {
+  top: 298px;
+  left: 99px;
+  width: 546.108px;
+  height: 326.509px;
+  transform: rotate(-36.016deg);
+  flex-shrink: 0;
+  position: absolute;
 }

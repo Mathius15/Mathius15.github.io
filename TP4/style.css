@@ -462,9 +462,231 @@ html {
 #mas-amigosp2 {
   top: 4698px;
 }
-#mas-amigosp3{
+#mas-amigosp3 {
   top: 5158px;
 }
-#mas-amigosp4{
+#mas-amigosp4 {
   top: 5637px;
+}
+
+/*-----------------------------------GRAN PODER(septimo container)-----------------------*/
+#gran-poder h1 {
+  top: 6012px;
+  left: 104px;
+  position: absolute;
+  width: 816px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#gran-poder button {
+  top: 6238px;
+  left: 110px;
+  position: absolute;
+  width: 292px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 111px;
+  border: 8px solid var(--2982-ff, #2982ff);
+  background: #ffe901;
+  box-shadow: 4px 5px 0px 0px #02187e;
+  /*letra de adentro del boton:*/
+  color: #02187e;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 94.5%; /* 18.9px */
+  letter-spacing: 2.2px;
+}
+/*------------------------------------TRES SPIDERS(octavo contenedor)--------------------*/
+#fondo-tres-spiders {
+  top: 6275px;
+  width: 1280px;
+  height: 719.861px;
+  flex-shrink: 0;
+  fill: #fff;
+  position: absolute;
+}
+
+#tres-spiders-gwen {
+  top: 6446px;
+  left: 190px;
+  position: absolute;
+  width: 268px;
+  height: 416.5px;
+  flex-shrink: 0;
+}
+#tres-spiders-peter {
+  top: 6455px;
+  left: 394px;
+  position: absolute;
+  width: 416.5px;
+  height: 457.5px;
+  flex-shrink: 0;
+}
+#tres-spiders-miles {
+  top: 6455px;
+  left: 777px;
+  position: absolute;
+  width: 313.5px;
+  height: 398.5px;
+  flex-shrink: 0;
+}
+/*---------------------------------SECCION EMAIL(noveno contenedor)-----------------------*/
+#email-cielo {
+  top: 6994px;
+  position: absolute;
+  width: 1280px;
+  height: 1296px;
+  flex-shrink: 0;
+}
+
+#seccion-email h1 {
+  top: 7106px;
+  left: 232px;
+  position: absolute;
+  width: 816px;
+  color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 94.5%; /* 56.7px */
+}
+#input-form {
+  top: 7363px;
+  left: 250px;
+  position: absolute;
+  width: 562px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 50px 0px 0px 50px;
+  border-top: 9px solid #2982ff;
+  border-bottom: 9px solid #2982ff;
+  border-left: 9px solid #2982ff;
+  background: #fff;
+  box-shadow: 4px 5px 0px 0px #02187e;
+  /*para el texto de adentro*/
+  color: rgba(0, 0, 0, 0.39);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 94.5%; /* 18.9px */
+  letter-spacing: 2.2px;
+}
+#boton-suscribirse {
+  top: 7363px;
+  left: 812px;
+  position: absolute;
+  width: 218px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 0px 50px 50px 0px;
+  border: 9px solid #2982ff;
+  background: #ffe901;
+  box-shadow: 4px 5px 0px 0px #02187e;
+  /*para el texto de adentro*/
+  color: #02187e;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 94.5%; /* 18.9px */
+  letter-spacing: 2.2px;
+}
+#seccion-email p {
+  top: 7482px;
+  left: 302px;
+  position: absolute;
+  width: 578px;
+  height: 95px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 94.5%; /* 18.9px */
+}
+#img-rating {
+  top: 7614px;
+  left: 302px;
+  position: absolute;
+  width: 231px;
+  height: 145px;
+  flex-shrink: 0;
+}
+#edificios-email {
+  top: 7570px;
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  flex-shrink: 0;
+}
+#spider-email1 {
+  top: 8130px;
+  left: 219px;
+  position: absolute;
+  width: 97px;
+  height: 89px;
+  flex-shrink: 0;
+}
+#spider-email2 {
+  top: 8066px;
+  left: 533px;
+  position: absolute;
+  width: 58px;
+  height: 64px;
+  flex-shrink: 0;
+}
+#spider-email3 {
+  top: 7963px;
+  left: 998px;
+  position: absolute;
+  width: 94px;
+  height: 88px;
+  flex-shrink: 0;
+}
+/*--------------------------------FOOTER(decimo contenedor)----------------------------*/
+#plataformas {
+  top: 8290px;
+  position: absolute;
+  width: 1280px;
+  height: 80px;
+  flex-shrink: 0;
+  background: #242424;
+}
+#plataformas img {
+  left: 100px;
+  position: absolute;
+  width: 1080px;
+  height: 75px;
+  flex-shrink: 0;
+}
+#footer {
+  top: 8370px;
+  position: absolute;
+  width: 1280px;
+  height: 598px;
+  flex-shrink: 0;
+  background-color: #5e5e5d;
+}
+#parrafo {
+  left: 100px;
+  position: absolute;
+  width: 820px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 94.5%; /* 18.9px */
+  letter-spacing: 2.2px;
 }

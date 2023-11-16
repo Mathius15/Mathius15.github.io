@@ -494,14 +494,17 @@ html {
   border: 8px solid var(--2982-ff, #2982ff);
   background: #ffe901;
   box-shadow: 4px 5px 0px 0px #02187e;
-  /*letra de adentro del boton:*/
+}
+#gran-poder button p,
+#seccion-email button p {
+  margin: 0;
+  text-align: center;
   color: #02187e;
-  font-family: Lato;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
   line-height: 94.5%; /* 18.9px */
-  letter-spacing: 2.2px;
 }
 /*------------------------------------TRES SPIDERS(octavo contenedor)--------------------*/
 #fondo-tres-spiders {
@@ -592,16 +595,9 @@ html {
   border: 9px solid #2982ff;
   background: #ffe901;
   box-shadow: 4px 5px 0px 0px #02187e;
-  /*para el texto de adentro*/
-  color: #02187e;
-  font-family: Lato;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 94.5%; /* 18.9px */
-  letter-spacing: 2.2px;
 }
-#seccion-email p {
+#email-p {
+  /*para el texto de adentro del boton*/
   top: 7482px;
   left: 302px;
   position: absolute;
@@ -689,4 +685,12 @@ html {
   font-weight: 400;
   line-height: 94.5%; /* 18.9px */
   letter-spacing: 2.2px;
+}
+#footer img {
+  top: 437px;
+  left: 100px;
+  width: 212px;
+  height: 41px;
+  flex-shrink: 0;
+  position: absolute;
 }

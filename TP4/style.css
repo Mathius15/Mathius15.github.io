@@ -16,7 +16,6 @@ html {
 .contenedor-img-cielo {
   position: absolute;
   top: 126px;
-
   background: url(./imagenes/cielo1.png), lightgray 50% / cover no-repeat;
   width: 1280px;
   height: 720px;
@@ -24,8 +23,7 @@ html {
 }
 
 #contenedor-header {
-  display: flex;
-  justify-content: space-around;
+  position: absolute;
   top: 0;
   width: 1280px;
   height: 227px;
@@ -39,7 +37,9 @@ html {
 }
 
 #img-menu {
-  margin-top: 20px;
+  top: 20px;
+  left: 100px;
+  position: absolute;
   width: 34px;
   height: 26px;
   flex-shrink: 0;
@@ -54,15 +54,15 @@ html {
   position: absolute;
 }
 #btn-comprar {
-  margin-top: 20px;
+  top: 20px;
+  left: 980px;
+  position: absolute;
   width: 200px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 111px;
   border: 8px solid var(--2982-ff, #2982ff);
   background: #ffe901;
-
-  /* Drop Shadow */
   box-shadow: 4px 5px 0px 0px #02187e;
 }
 
@@ -71,7 +71,6 @@ html {
   margin: 0;
   text-align: center;
   color: #02187e;
-
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -511,8 +510,6 @@ html {
   top: 6275px;
   width: 1280px;
   height: 719.861px;
-  flex-shrink: 0;
-  fill: #fff;
   position: absolute;
 }
 
@@ -523,6 +520,7 @@ html {
   width: 268px;
   height: 416.5px;
   flex-shrink: 0;
+  z-index: 2;
 }
 #tres-spiders-peter {
   top: 6455px;
@@ -531,6 +529,7 @@ html {
   width: 416.5px;
   height: 457.5px;
   flex-shrink: 0;
+  z-index: 2;
 }
 #tres-spiders-miles {
   top: 6455px;
@@ -539,6 +538,7 @@ html {
   width: 313.5px;
   height: 398.5px;
   flex-shrink: 0;
+  z-index: 2;
 }
 /*---------------------------------SECCION EMAIL(noveno contenedor)-----------------------*/
 #email-cielo {

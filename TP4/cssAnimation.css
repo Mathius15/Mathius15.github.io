@@ -1,4 +1,6 @@
+/*--------------------------------------------------consigna 7----------------------------------*/
 .edificios {
+  /*hace los edificios invisibles y los posiciona en otra lugar*/
   transform: translateY(100px);
   opacity: 0;
   filter: blur(5px);
@@ -6,35 +8,101 @@
 }
 
 .showEdificios {
+  /*muestra los edificios con una animacion*/
   transform: translateY(0px);
   opacity: 1;
   filter: blur(0);
 }
 
 .arañas {
+  /*hace las arañas invisibles y los posiciona en otra lugar*/
   transform: translateY(-100px);
   opacity: 0;
   transition: all 3s;
 }
 
 .showArañas {
+  /*muestra las arañas con una animacion*/
   transform: translateY(0px);
   opacity: 1;
   filter: blur(0);
 }
 
 .telarañas {
+  /*hace las tealarañas invisibles y los posiciona en otra lugar*/
   transform: translateY(200px);
   opacity: 0;
   transition: all 3s;
 }
 
 .showTelarañas {
+  /*muestra las telarañas con una animacion*/
   transform: translateY(0px);
   opacity: 1;
   filter: blur(0);
 }
+/*------------------------------------------------consigna 9-------------------------------------*/
+.cards-personajes {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 3s;
+}
 
+.showPersonajes {
+  transform: translateY(0px);
+  opacity: 1;
+  filter: blur(1);
+}
 
+.cards-personajes:nth-child(1),
+.cards-personajes:nth-child(2) {
+  transition-delay: 0.2s; /* Retraso para la primera imagen */
+}
 
+/* Segunda imagen */
+.cards-personajes:nth-child(3),
+.cards-personajes:nth-child(4) {
+  transition-delay: 0.4s; /* Retraso para la segunda imagen */
+}
 
+/* Tercera imagen */
+.cards-personajes:nth-child(5),
+.cards-personajes:nth-child(6) {
+  transition-delay: 0.6s; /* Retraso para la tercera imagen */
+}
+
+/*----------------------------------------consigna 11---------------------------*/
+#race1,
+#race2,
+#race3 {
+  transition: transform 0.3s ease;
+}
+
+#race1:hover,
+#race2:hover,
+#race3:hover {
+  transform: translateZ(30px);
+  transform: scale(1.1);
+}
+
+/*----------------------------------------consigna 12--------------------------------*/
+.tres-spider {
+  filter: blur(0); /* Por defecto, no tiene desenfoque */
+  transition: transform 0.5s ease-in-out;
+}
+
+.borroso {
+  filter: blur(5px); /* Aplica el desenfoque */
+}
+.agrandar {
+  transform: scale(1.2); /* Aumenta el tamaño */
+}
+#tres-spiders-fondo1 {
+  top: 6275px;
+  width: 1280px;
+  height: 841.639px;
+  flex-shrink: 0;
+  position: absolute;
+  background-image: url("./imagenes/prueba3.png");
+  z-index: 2;
+}

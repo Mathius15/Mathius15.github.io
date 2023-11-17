@@ -64,6 +64,7 @@ html {
   border: 8px solid var(--2982-ff, #2982ff);
   background: #ffe901;
   box-shadow: 4px 5px 0px 0px #02187e;
+  transition: all 0.5s ease;
 }
 
 /*texto que dice comprar del boton*/
@@ -493,6 +494,7 @@ html {
   border: 8px solid var(--2982-ff, #2982ff);
   background: #ffe901;
   box-shadow: 4px 5px 0px 0px #02187e;
+  transition: all 0.3s ease;
 }
 #gran-poder button p,
 #seccion-email button p {

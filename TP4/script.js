@@ -1,3 +1,14 @@
+// Bloquear el scroll durante los primeros 3 segundos
+window.addEventListener('load', () => {
+    // Deshabilitar el scroll
+    document.body.style.overflowY = 'hidden';
+
+    // Volver a habilitar el scroll después de 3 segundos
+    setTimeout(() => {
+        document.body.style.overflowY = 'auto';
+    }, 3000); // 3000 milisegundos = 3 segundos
+});
+
 //aparicion de items
 const observerEdificios = new IntersectionObserver((entries) => {//se ejecuta cada vez que la visibilidad de un objeto cambia
     entries.forEach((entry) => {//usa foreach porque pueden ser varios elementos
@@ -27,6 +38,8 @@ const observerTelaraña = new IntersectionObserver((entries) => {//se ejecuta ca
             entry.target.classList.remove('showTelarañas');
         }
     });
+}, {
+    threshold: 0.2, //es el porcentaje del elemento que tiene que verse para que se condiere como isIntersecting
 });
 
 const observerPersonajes = new IntersectionObserver((entries) => {//se ejecuta cada vez que la visibilidad de un objeto cambia
@@ -107,3 +120,81 @@ images.forEach((image) => {
         });
     });
 });
+
+
+/*---------------------PARALLAX CONSIGNA 7---------------------------------------*/
+const windowHeight = window.innerHeight;
+
+window.addEventListener('scroll', function () {
+    const offset = window.scrollY;
+
+    arañas.forEach(function (element) {
+        const rect = element.getBoundingClientRect();
+        const initialTop = rect.top + offset;
+        const bottom = rect.bottom + offset;
+        element.style.transition = 'none';
+        if (initialTop < windowHeight && bottom > 0) {
+            const speed = parseFloat(element.dataset.speed) || 1;
+            const newPosition = offset * speed * 0.10;
+
+            element.style.transform = `translateY(${newPosition}px)`;
+        }
+    });
+});
+
+window.addEventListener('scroll', function () {
+    const offset = window.scrollY;
+
+    edificios.forEach(function (element) {
+        const rect = element.getBoundingClientRect();
+        const initialTop = rect.top + offset;
+        const bottom = rect.bottom + offset;
+        element.style.transition = 'none';
+        if (initialTop < windowHeight && bottom > 0) {
+            const speed = parseFloat(element.dataset.speed) || 1;
+            const newPosition = offset * speed * 0.1;
+
+            element.style.transform = `translateY(${newPosition}px)`;
+        }
+    });
+});
+
+window.addEventListener('scroll', function () {
+    const offset = window.scrollY;
+
+    telarañas.forEach(function (element) {
+        const rect = element.getBoundingClientRect();
+        const initialTop = rect.top + offset;
+        const bottom = rect.bottom + offset;
+        element.style.transition = 'none';
+        if (initialTop < windowHeight && bottom > 0) {
+            const speed = parseFloat(element.dataset.speed) || 1;
+            const newPosition = offset * speed * 0.10;
+
+            element.style.transform = `translateY(${newPosition}px)`;
+        }
+    });
+});
+
+
+const cielo = document.querySelectorAll('#cielo1');
+
+window.addEventListener('scroll', function () {
+    const offset = window.scrollY;
+
+    cielo.forEach(function (element) {
+        const rect = element.getBoundingClientRect();
+        const initialTop = rect.top + offset;
+        const bottom = rect.bottom + offset;
+        console.log(bottom)
+        element.style.transition = 'none';
+        if (initialTop < windowHeight && bottom > 0) {
+            const speed = parseFloat(element.dataset.speed) || 1;
+            const newPosition = offset * speed * 0.3;
+
+            element.style.transform = `translateY(${newPosition}px)`;
+        }
+    });
+});
+
+

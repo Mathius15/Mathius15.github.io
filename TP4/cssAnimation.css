@@ -18,7 +18,6 @@
   /*hace las arañas invisibles y los posiciona en otra lugar*/
   transform: translateY(-100px);
   opacity: 0;
-  transition: all 3s;
 }
 
 .showArañas {
@@ -114,3 +113,19 @@
   transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
   box-shadow: 0px 0px 0px 0px;
 }
+
+#cielo1 {
+  position: absolute;
+  width: 1280px;
+  height: auto; /* Puedes ajustar la altura según sea necesario */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url('./imagenes/cielo1.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  background-repeat: repeat-y; /* Repetir verticalmente */
+  background-position: center top; /* Posición inicial */
+}
+

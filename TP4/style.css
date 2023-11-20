@@ -19,6 +19,7 @@ html {
   width: 1280px;
   height: 720px;
   left: 0;
+  background-color: rgb(78,152,247);
 }
 
 #cielo1 {
@@ -32,7 +33,7 @@ html {
   position: sticky ;
   top: 0;
   width: 1280px;
-  height: 227px;
+  height: 150px;
   flex-shrink: 0;
   background: linear-gradient(
     180deg,
@@ -40,6 +41,7 @@ html {
     #5499f8 87.91%,
     rgba(84, 153, 248, 0) 100%
   );
+  z-index: 10;
 }
 
 #img-menu {
@@ -52,12 +54,11 @@ html {
 }
 /*la foto de spidey Amazing friends*/
 #img-logo {
-  margin-left: 330px;
-  margin-top: -35px;
+  left: 330px;
+  position: absolute;
+  top: 91px;
   width: 590px;
   height: 301px;
-  display: flex;
-  position: absolute;
 }
 #btn-comprar {
   top: 20px;
@@ -71,6 +72,7 @@ html {
   background: #ffe901;
   box-shadow: 4px 5px 0px 0px #02187e;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 /*texto que dice comprar del boton*/
@@ -82,6 +84,9 @@ html {
   font-style: normal;
   font-weight: 900;
   line-height: 94.5%; /* 18.9px */
+}
+.edificios{
+  z-index: 4;
 }
 /*tres imagenes svg de los 3 edificios con sus estilos para acomodar tamaño*/
 #img-edificio1 {
@@ -111,9 +116,11 @@ html {
   left: 906px;
   width: 374px;
   height: 727.5px;
+  z-index: 1;
 }
 
 .img-spiders {
+  z-index: 5;
   position: absolute;
 }
 
@@ -130,7 +137,7 @@ html {
   width: 465px;
   height: 465px;
   flex-shrink: 0;
-  z-index: 200;
+  z-index: 5;
 }
 
 #img-spider3 {
@@ -147,7 +154,7 @@ html {
   height: 627.274px;
   margin-left: -180px;
   position: absolute;
-  z-index: 999;
+  z-index: 5;
 }
 
 #img-telaraña2 {
@@ -157,7 +164,7 @@ html {
   height: 372.442px;
   overflow: hidden;
   position: absolute;
-  z-index: 999;
+  z-index: 5;
 }
 
 /*---------------------css segundo contenedor del duende verde(violeta)--------------------*/
@@ -167,7 +174,7 @@ html {
   width: 1280px;
   height: 844.5px;
   fill: #8f6aa6;
-  z-index: 99;
+  z-index: 4;
 }
 
 #img-duende {
@@ -422,7 +429,7 @@ html {
   font-style: normal;
   font-weight: 600;
   line-height: 94.5%; /* 56.7px */
-  z-index: 999;
+  z-index: 1;
 }
 
 #mas-amigos p {

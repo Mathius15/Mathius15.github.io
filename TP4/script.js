@@ -1,14 +1,24 @@
-// Bloquear el scroll durante los primeros 3 segundos
+
 window.addEventListener('load', () => {
-    // Deshabilitar el scroll
-    document.body.style.overflowY = 'hidden';
-    // Volver a habilitar el scroll después de 3 segundos
+    const peter = document.getElementById('img-spider2')
+    peter.classList.add('showArañas');//sino no aparecia el spider 2 al principio
+    const offset = window.scrollY;//toma el tope visible
+    if (offset > 480) {
+        ajustarHeader();
+    }
+    //document.body.style.overflowY = 'hidden';//desabilita el scroll
     setTimeout(() => {
-        document.body.style.overflowY = 'auto';
-    }, 3000); // 3000 milisegundos = 3 segundos
+        document.body.style.overflowY = 'auto';//habilita el scroll
+    }, 3000);
 });
 
-
+function ajustarHeader() {
+    imgLogo.style.width = `133px`;
+    imgLogo.style.height = `68px`;
+    imgLogo.style.top = `17px`;
+    imgLogo.style.left = `574px`;
+    header.style.height = `103px`;
+}
 
 //aparicion de items
 const observerEdificios = new IntersectionObserver((entries) => {//se ejecuta cada vez que la visibilidad de un objeto cambia
@@ -29,6 +39,8 @@ const observerArañas = new IntersectionObserver((entries) => {//se ejecuta cada
             entry.target.classList.remove('showArañas');
         }
     });
+}, {
+    threshold: 0.00001,
 });
 
 const observerTelaraña = new IntersectionObserver((entries) => {//se ejecuta cada vez que la visibilidad de un objeto cambia
@@ -67,7 +79,7 @@ const cardsPersonajes = document.querySelectorAll('.cards-personajes');
 cardsPersonajes.forEach((el) => observerPersonajes.observe(el));
 
 
-//parralax
+/*------------------------------------CONSIGNA 6----------------------*/
 const parallaxDuende = document.getElementById('img-duende');
 let initialTopDuende = -60;
 
@@ -81,7 +93,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
+/*---------------------------------------------------CONSIGNA 12----------------------------- */
 const images = document.querySelectorAll('.tres-spider');
 const fondo3spiders = document.getElementById('fondo-tres-spiders');
 images.forEach((image) => {
@@ -91,10 +103,12 @@ images.forEach((image) => {
         if (imagenSeleccionada === 'tres-spiders-gwen') {
             fondo3spiders.src = './imagenes/3spidersFondo1.svg'
             fondo3spiders.id = 'tres-spiders-fondo1';
+            fondo3spiders.style.transition = 'all 0.3s ease';
         } else if (imagenSeleccionada === 'tres-spiders-peter') {
             fondo3spiders.src = './imagenes/3spidersFondo2.svg'
             fondo3spiders.classList.add('tres-spiders-fondo1');
             fondo3spiders.id = 'tres-spiders-fondo1';
+            fondo3spiders.style.transition = 'all 0.3s ease';
 
         } else if (imagenSeleccionada === 'tres-spiders-miles') {
             fondo3spiders.src = './imagenes/3spidersFondo3.svg'
@@ -128,7 +142,6 @@ const windowHeight = window.innerHeight;//altura visible en el navegador
 
 window.addEventListener('scroll', function () {//se activa haciendo scroll
     const offset = window.scrollY;//toma el tope visible
-
     arañas.forEach(function (element) {//recorre todos los elementos con clase .araña
         const rect = element.getBoundingClientRect();//las cordenadas delimitadoras del elemento en relación con la ventana del navegador
         const initialTop = rect.top + offset;//pos inicial del elemento
@@ -185,7 +198,6 @@ window.addEventListener('scroll', function () { //lo mismo que el de arriba
         const rect = element.getBoundingClientRect();
         const initialTop = rect.top + offset;
         const bottom = rect.bottom + offset;
-        console.log(offset)
         element.style.transition = 'none';
         if (initialTop < windowHeight && bottom > 0 && offset < 320) {
             const speed = parseFloat(element.dataset.speed) || 1;
@@ -195,7 +207,25 @@ window.addEventListener('scroll', function () { //lo mismo que el de arriba
         }
     });
 });
+/*----------------------------------------CONSIGNA8-----------------------------------------*/
+let container = document.getElementById('vengadores')
+let layer = document.querySelectorAll('.img-vengadores');
+let layerBC = document.querySelectorAll('.imagen-fondo');
 
+container.onmousemove = function (e) {
+    const layer0 = layer[0].getBoundingClientRect();//blackpanter
+    const layer1 = layer[1].getBoundingClientRect();//hulk
+    const layer2 = layer[2].getBoundingClientRect();//elastico
+    let x = e.clientX;
+    let y = e.clientY;
+    layer[0].style.transform = `translateX(${x * -0.01}px) translateY(${y * 0.01}px) rotate(13.615deg)`;
+    layer[1].style.transform = `translateX(${x * -0.03}px) translateY(${y * 0.03}px) rotate(7.515deg)`;
+    layer[2].style.transform = `translateX(${x * -0.05}px) translateY(${y * 0.05}px) rotate(-12.483deg)`;
+
+    layerBC[1].style.transform = `translateX(${x * 0.001}px) translateY(${y * 0.02}px)`;
+    layerBC[2].style.transform = `translateX(${x * 0.001}px) translateY(${y * 0.04}px)`;
+
+}
 
 /*-------------------------------------CONSIGNA 5(header sticky)-----------------------------*/
 const logo = document.getElementById('img-logo');//agarro el logo
@@ -213,16 +243,13 @@ const originalLeft = 330;
 window.addEventListener('scroll', function () {
     const scrollY = window.scrollY;
     const offset = window.scrollY;
-
     // Calcula un nuevo tamaño basado en el desplazamiento
     const newWidth = originalWidth - scrollY * 1;
     const newHeight = originalHeight - scrollY * 0.5;
-    const newTop = originalTop - scrollY * 1;
+    const newTop = originalTop - scrollY * 0.5;
     const newLeft = originalLeft + scrollY * 0.5;
 
     const newHeightHeader = heightHeader - scrollY * 0.4;
-
-    // Limita el tamaño mínimo de la imagen
     if (newWidth > 133 && newHeight > 68) {//para ajustar el tamaño del logo y su posicion
         imgLogo.style.width = `${newWidth}px`;
         imgLogo.style.height = `${newHeight}px`;
@@ -232,8 +259,12 @@ window.addEventListener('scroll', function () {
         if (newLeft < 580) {//ajusto izquierda, que no sea menos de 574
             imgLogo.style.left = `${newLeft}px`;
         }
+    } else {
+        //ajustarHeader();
     }
     if (newHeightHeader >= 103) {//para ajustar el tamaño del header
         header.style.height = `${newHeightHeader}px`;
     }
+    // Limita el tamaño mínimo de la imagen
 });
+/*------------------------------------------CONSIGNA 11(cards 3d)---------------------------*/

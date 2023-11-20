@@ -14,14 +14,15 @@
   filter: blur(0);
 }
 
-.arañas {
-  /*hace las arañas invisibles y los posiciona en otra lugar*/
-  transform: translateY(-100px);
+.img-spiders {
+  /*hace las tealarañas invisibles y los posiciona en otra lugar*/
+  transform: translateY(200px);
   opacity: 0;
+  transition: all 3s;
 }
 
 .showArañas {
-  /*muestra las arañas con una animacion*/
+  /*muestra las telarañas con una animacion*/
   transform: translateY(0px);
   opacity: 1;
   filter: blur(0);
@@ -87,7 +88,7 @@
 /*----------------------------------------consigna 12--------------------------------*/
 .tres-spider {
   filter: blur(0); /* Por defecto, no tiene desenfoque */
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .borroso {
@@ -128,4 +129,5 @@
   background-repeat: repeat-y; /* Repetir verticalmente */
   background-position: center top; /* Posición inicial */
 }
+/*-------------------------------consigna 4----------------------*/
 

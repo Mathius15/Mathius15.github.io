@@ -641,14 +641,7 @@ html {
   height: 720px;
   flex-shrink: 0;
 }
-#spider-email1 {
-  top: 8130px;
-  left: 219px;
-  position: absolute;
-  width: 97px;
-  height: 89px;
-  flex-shrink: 0;
-}
+
 #spider-email2 {
   top: 8066px;
   left: 533px;
@@ -656,7 +649,7 @@ html {
   width: 58px;
   height: 64px;
   flex-shrink: 0;
-}
+}/*
 #spider-email3 {
   top: 7963px;
   left: 998px;
@@ -664,7 +657,7 @@ html {
   width: 94px;
   height: 88px;
   flex-shrink: 0;
-}
+}*/
 /*--------------------------------FOOTER(decimo contenedor)----------------------------*/
 #plataformas {
   top: 8290px;

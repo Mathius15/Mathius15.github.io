@@ -108,8 +108,8 @@
 }
 /*--------------------------------------consigna 10--------------------------------------*/
 #btn-comprar:hover,
-#btn-comprar-ahora:hover{
-  background: #2982ff ;
+#btn-comprar-ahora:hover {
+  background: #2982ff;
   border: 8px solid var(--2982-ff, #ffe901);
   transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
   box-shadow: 0px 0px 0px 0px;
@@ -124,10 +124,84 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url('./imagenes/cielo1.png');
+  background-image: url("./imagenes/cielo1.png");
   background-size: cover; /* Ajusta el tamaño de la imagen */
   background-repeat: repeat-y; /* Repetir verticalmente */
   background-position: center top; /* Posición inicial */
 }
 /*-------------------------------consigna 4----------------------*/
 
+/*---------------------------------consigna 13---------------------------*/
+#venom {/*animacion venom normal*/
+  top: 7963px;
+  left: 930px;
+  position: absolute;
+  width: 180px;
+  height: 90px;
+  margin: auto;
+  background: url(./imagenes/venom2.png) repeat-x;
+  animation: spriteVenom2 0.9s steps(6) infinite;/*tiene 6 steps(imagenes)y dura 0.9segundos*/
+}
+#venom:hover {/*animacion venom on hover*/
+  top: 7959px;
+  left: 930px;
+  position: absolute;
+  width: 110px;
+  height: 90px;
+  margin: auto;
+  background: url(./imagenes/venom1.png) repeat-x;
+  animation: spriteVenom 0.9s steps(7) infinite;/*tiene 7 steps(imagenes)y dura 0.9segundos*/
+}
+#spider-sprite {/*animacion spider normal*/
+  top: 7940px;
+  left: 1060px;
+  position: absolute;
+  width: 80px;
+  height: 110px;
+  margin: auto;
+  background: url(./imagenes/spider-sprite1.png) repeat-x;
+  animation: spriteSpider1 2s steps(12) infinite;/*tiene 12 steps(imagenes)y dura 0.9segundos*/
+}
+#spider-sprite:hover {/*animacion spider on hover*/
+  top: 7910px;
+  left: 900px;
+  position: absolute;
+  width: 280px;
+  height: 140px;
+  margin: auto;
+  background: url(./imagenes/spider-sprite2.png) repeat-x;
+  animation: spriteSpider2 1.2s steps(7) infinite;/*tiene 7 steps(imagenes)y dura 0.9segundos*/
+}
+@keyframes spriteSpider1 {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -960px;/*total largo imagen*/
+  }
+}
+@keyframes spriteSpider2 {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1960px;/*total largo imagen*/
+  }
+}
+@keyframes spriteVenom {/*animacion venom normal*/
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -770px;/*total largo imagen*/
+  }
+}
+
+@keyframes spriteVenom2 {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1080px;/*total largo imagen*/
+  }
+}

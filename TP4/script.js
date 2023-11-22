@@ -216,10 +216,10 @@ container.onmousemove = function (e) {
     const layer0 = layer[0].getBoundingClientRect();//blackpanter
     const layer1 = layer[1].getBoundingClientRect();//hulk
     const layer2 = layer[2].getBoundingClientRect();//elastico
-    let x = e.clientX;
-    let y = e.clientY;
-    layer[0].style.transform = `translateX(${x * -0.01}px) translateY(${y * 0.01}px) rotate(13.615deg)`;
-    layer[1].style.transform = `translateX(${x * -0.03}px) translateY(${y * 0.03}px) rotate(7.515deg)`;
+    let x = e.clientX;//tomo pos x del mouse
+    let y = e.clientY;//tomo pos y del mouse
+    layer[0].style.transform = `translateX(${x * -0.01}px) translateY(${y * 0.01}px) rotate(13.615deg)`;//muevo el elemento dependiendo la pos del mouse y le agrego 0.01 px a esa pos
+    layer[1].style.transform = `translateX(${x * -0.03}px) translateY(${y * 0.03}px) rotate(7.515deg)`;//el rotate es para que la imagen quede igual que como estaba(ya tenia un rotate)
     layer[2].style.transform = `translateX(${x * -0.05}px) translateY(${y * 0.05}px) rotate(-12.483deg)`;
 
     layerBC[1].style.transform = `translateX(${x * 0.001}px) translateY(${y * 0.02}px)`;

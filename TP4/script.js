@@ -12,6 +12,20 @@ window.addEventListener('load', () => {
     }, 3000);
 });
 
+let menu= document.getElementById("menu-hamb");
+function toggleMenu(element) {
+    // agregamos o quitamos la clase "clicked" al hacer clic
+    element.classList.toggle("clicked");
+
+    // if que permite ocultar o mostrar el menu segun si esta clickeado o no
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+  }
+
+
 /*ANIMACION DE CARGA*/
 var i = 0;
 

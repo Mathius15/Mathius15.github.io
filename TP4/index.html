@@ -14,15 +14,23 @@
 <body>
 
     <header id="contenedor-header">
-        <div class="menu sticky">
+        <div class="menu" onclick="toggleMenu(this)">
             <div class="barraMenu"></div>
             <div class="barraMenu"></div>
             <div class="barraMenu"></div>
-        </div>
+          </div>
         <button id="btn-comprar" class="btn-comprar"><p>COMPRAR</p></button>
         <img src="imagenes/logo.png" alt="logo" id="img-logo" class="arañas" onclick="location.href = 'index.html'">
     </header>
 
+    <nav>
+        <div class="menu" id="menu-hamb">
+            <a href="#">Inicio</a>
+            <a href="#">Personajes</a>
+            <a href="#">Historia</a>
+            <a href="#">Cómics</a>
+        </div>
+    </nav>
 
     <div id="load-container">
         <div class="contenedor-loader">

@@ -12,6 +12,45 @@ window.addEventListener('load', () => {
     }, 3000);
 });
 
+/*ANIMACION DE CARGA*/
+var i = 0;
+
+function move() {
+  if (window.location.href.includes("index.html")) {
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("myBar");
+      var container = document.getElementById("load-container");
+      var width = 10;
+      var id = setInterval(frame, 0);
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+          // Ocultar el contenedor cuando la carga está completa
+          setTimeout(function() {
+            container.style.display = "none";
+          }, 500); //5sg
+        } else {
+          width++;
+          elem.style.width = width + "%";
+          elem.innerHTML = width + "%";
+        }
+      }
+    }
+  }
+}
+
+// Llama a la función move cuando la página se carga completamente
+document.addEventListener("DOMContentLoaded", function() {
+  move();
+});
+/*TERMINA CODIGO ANIMACION CARGA*/
+
+/* ANIMACION DE MENU HAMB */
+
+/*termina codigo animacion menu */
+
 function ajustarHeader() {
     imgLogo.style.width = `133px`;
     imgLogo.style.height = `68px`;
@@ -268,3 +307,9 @@ window.addEventListener('scroll', function () {
     // Limita el tamaño mínimo de la imagen
 });
 /*------------------------------------------CONSIGNA 11(cards 3d)---------------------------*/
+
+
+
+
+
+

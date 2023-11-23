@@ -12,16 +12,29 @@
 </head>
 
 <body>
+
     <header id="contenedor-header">
-        <img src="./imagenes/menu.svg" alt="menu" id="img-menu">
-        <button id="btn-comprar" class="btn-comprar">
-            <p>COMPRAR</p>
-        </button>
-        <img src="imagenes/logo.png" alt="logo" id="img-logo" class="arañas" oncick="location.href = 'index.html'">
+        <div class="menu sticky">
+            <div class="barraMenu"></div>
+            <div class="barraMenu"></div>
+            <div class="barraMenu"></div>
+        </div>
+        <button id="btn-comprar" class="btn-comprar"><p>COMPRAR</p></button>
+        <img src="imagenes/logo.png" alt="logo" id="img-logo" class="arañas" onclick="location.href = 'index.html'">
     </header>
+
+
+    <div id="load-container">
+        <div class="contenedor-loader">
+          <img src="imagenes/telarañaCarga.png" class="spiderman-loader"></img>
+        </div>
+        <div class="cargando">Lanzando telarañas...</div>
+        <div id="myProgress">
+          <div id="myBar">10%</div>
+        </div>
+      </div>
     
-    
-    
+
     <div class="contenedor-img-cielo">
         <img src="./imagenes/cielo1.png" id="cielo1" data-speed="3.5">
         <img src="./imagenes/edificio.svg" id="img-edificio1" class="parallax-layer edificios" data-speed="3.2">

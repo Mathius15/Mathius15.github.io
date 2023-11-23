@@ -1,3 +1,4 @@
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -11,6 +12,8 @@ html {
   width: 1280px;
   background-color: #fff;
 }
+/*ANIMACION PARA MENU HAMB*/
+
 
 /*contenedor de la primera foto con la foto de fondo del cielo*/
 .contenedor-img-cielo {
@@ -34,7 +37,10 @@ html {
   top: 0;
   width: 1280px;
   height: 150px;
-  flex-shrink: 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
   background: linear-gradient(
     180deg,
     #5499f8 0%,
@@ -44,14 +50,47 @@ html {
   z-index: 10;
 }
 
-#img-menu {
-  top: 20px;
-  left: 100px;
-  position: absolute;
-  width: 34px;
-  height: 26px;
-  flex-shrink: 0;
+.menu {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px 0px 0px 8%;
+  padding: 0px;
+  border: 0px;
+
 }
+
+.barraMenu {
+
+  height: 4px;
+  width: 34px;
+  margin: 1px;
+  background-color: #FFE901;
+  border: 4px solid #2981FF;
+  border-radius: 10px;
+  box-shadow: 4px 5px 0px 0px #02187E;
+  transition: all .5s;
+  transform-origin: left;
+}
+
+.menu:hover div:first-child{
+  transform: rotate(45deg);
+
+  box-shadow: 0px 0px 0px 0px #02187E; 
+}
+
+.menu:hover div:nth-child(2){
+  opacity: 0;
+}
+
+.menu:hover div:last-child{
+  transform: rotate(-42deg);
+
+  box-shadow: 0px 0px 0px 0px #02187E;  
+}
+
+
 /*la foto de spidey Amazing friends*/
 #img-logo {
   left: 330px;
@@ -701,4 +740,69 @@ html {
   height: 41px;
   flex-shrink: 0;
   position: absolute;
+}
+
+/*estilos para animacion carga*/
+.cargando {
+  position: relative;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #c5c5c5;
+  margin-top: 7em;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+
+  font-size: 1.3em; /* Tamaño de fuente ajustado */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+}
+
+.contenedor-loader {
+  height: 6em;
+  display: flex;
+  justify-content: center;
+}
+
+#load-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: linear-gradient(rgb(22, 22, 22), rgb(220, 3, 3)); /* Fondo rojo y negro */
+  
+  display: grid;
+  place-content: center;
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  z-index: 9999;
+}
+
+.spiderman-loader {
+  
+  width: 140px;
+  height: 190px;
+z-index: 999;
+  animation: rotate 3s linear infinite;
+}
+
+#myBar {
+  margin-top: 15px;
+  width: 10%;
+  height: 30px;
+  background-color: rgba(59, 13, 13, 0.775);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.752);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra en la barra de carga */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

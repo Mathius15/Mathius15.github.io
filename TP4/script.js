@@ -283,7 +283,7 @@ container.onmousemove = function (e) {
 }
 
 /*-------------------------------------CONSIGNA 5(header sticky)-----------------------------*/
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const offset = window.scrollY;
     if (offset > 560) {
         header.style.height = `103px`;
@@ -328,13 +328,53 @@ window.addEventListener('scroll', function () {
     if (newHeightHeader >= 103) {//para ajustar el tamaño del header
         header.style.height = `${newHeightHeader}px`;
     }
-    console.log(offset);
     // Limita el tamaño mínimo de la imagen
 });
 
 /*------------------------------------------CONSIGNA 11(cards 3d)---------------------------*/
+window.addEventListener('scroll', function () {
+    const offset = window.scrollY;
+    const cards = document.querySelectorAll('.cards-race');
+    if (offset > 1900 && offset < 2600) {
+        cards.forEach(function (card, index) {
+            const move = (offset - 1900) / 15; //velocidad de movimiento
+            switch (index) {
+                case 0://la tarjeta 1
+                    card.style.transform = `translateY(${move}px) rotate(-13.078deg)`;//esto lo mueve on scroll
+                    card.addEventListener('mouseenter', function () {
+                        card.style.transform = `translateZ(30px) scale(1.1)`;//lo mueve on hover
+                    })
+                    card.addEventListener('mouseleave', function () {
+                        card.style.transform = `translateZ(0px) scale(1)`;
+                        card.style.transform = `translateY(${move}px) rotate(-13.078deg)`;//lo regresa a su pos original cuando sale el mouse
+                    })
+                    break;
+                case 1://la tarjeta 2
+                    card.style.transform = `translateY(${move}px) rotate(-26.474deg)`;//esto lo mueve on scroll
+                    card.addEventListener('mouseenter', function () {
+                        card.style.transform = `translateZ(30px) scale(1.1)`;//lo mueve on hover
+                    })
+                    card.addEventListener('mouseleave', function () {
+                        card.style.transform = `translateZ(0px) scale(1)`;
+                        card.style.transform = `translateY(${move}px) rotate(-26.474deg)`;//lo regresa a su pos original cuando sale el mouse
+                    })
+                    break;
+                case 2://la tarjeta 3
+                    card.style.transform = `translateY(${move}px) rotate(-36.016deg)`;//esto lo mueve on scroll
+                    card.addEventListener('mouseenter', function () {
+                        card.style.transform = `translateZ(30px) scale(1.1)`;//lo mueve on hover
+                    })
+                    card.addEventListener('mouseleave', function () {
+                        card.style.transform = `translateZ(0px) scale(1)`;
+                        card.style.transform = `translateY(${move}px) rotate(-36.016deg)`;//lo regresa a su pos original cuando sale el mouse
+                    })
+                    break;
+            }
 
-/*----------------------------------------CONSIGNA 3(aparicion elementos menu)*/
+        });
+    }
+});
+/*----------------------------------------CONSIGNA 3(aparicion elementos menu)----------------------*/
 
 
 const observerItemsMenu = new IntersectionObserver((entries) => {//se ejecuta cada vez que la visibilidad de un objeto cambia

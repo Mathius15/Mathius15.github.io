@@ -81,8 +81,7 @@
 #race1:hover,
 #race2:hover,
 #race3:hover {
-  transform: translateZ(30px);
-  transform: scale(1.1);
+  transform: translateZ(30px) scale(1.1);
 }
 
 /*----------------------------------------consigna 12--------------------------------*/

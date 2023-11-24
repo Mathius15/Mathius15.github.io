@@ -12,7 +12,8 @@ window.addEventListener('load', () => {
     }, 3000);
 });
 
-let menu= document.getElementById("menu-hamb");
+/*-----------------------------------CONSIGNA 2-----------------------*/
+let menu = document.getElementById("menu-hamb");
 function toggleMenu(element) {
     // agregamos o quitamos la clase "clicked" al hacer clic
     element.classList.toggle("clicked");
@@ -20,44 +21,44 @@ function toggleMenu(element) {
     // if que permite ocultar o mostrar el menu segun si esta clickeado o no
     if (menu.style.display === 'block') {
         menu.style.display = 'none';
-      } else {
+    } else {
         menu.style.display = 'block';
-      }
-  }
+    }
+}
 
 
 /*ANIMACION DE CARGA*/
 var i = 0;
 
 function move() {
-  if (window.location.href.includes("index.html")) {
-    if (i == 0) {
-      i = 1;
-      var elem = document.getElementById("myBar");
-      var container = document.getElementById("load-container");
-      var width = 10;
-      var id = setInterval(frame, 0);
-      function frame() {
-        if (width >= 100) {
-          clearInterval(id);
-          i = 0;
-          // Ocultar el contenedor cuando la carga está completa
-          setTimeout(function() {
-            container.style.display = "none";
-          }, 500); //5sg
-        } else {
-          width++;
-          elem.style.width = width + "%";
-          elem.innerHTML = width + "%";
+    if (window.location.href.includes("index.html")) {
+        if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("myBar");
+            var container = document.getElementById("load-container");
+            var width = 10;
+            var id = setInterval(frame, 0);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                    i = 0;
+                    // Ocultar el contenedor cuando la carga está completa
+                    setTimeout(function () {
+                        container.style.display = "none";
+                    }, 500); //5sg
+                } else {
+                    width++;
+                    elem.style.width = width + "%";
+                    elem.innerHTML = width + "%";
+                }
+            }
         }
-      }
     }
-  }
 }
 
 // Llama a la función move cuando la página se carga completamente
-document.addEventListener("DOMContentLoaded", function() {
-  move();
+document.addEventListener("DOMContentLoaded", function () {
+    move();
 });
 /*TERMINA CODIGO ANIMACION CARGA*/
 
@@ -74,6 +75,7 @@ function ajustarHeader() {
 }
 
 //aparicion de items
+/*---------------------------------------CONSIGNA 7------------------*/
 const observerEdificios = new IntersectionObserver((entries) => {//se ejecuta cada vez que la visibilidad de un objeto cambia
     entries.forEach((entry) => {//usa foreach porque pueden ser varios elementos
         if (entry.isIntersecting) {//si ese objeto es visible le cambia la clase a show
@@ -281,6 +283,16 @@ container.onmousemove = function (e) {
 }
 
 /*-------------------------------------CONSIGNA 5(header sticky)-----------------------------*/
+window.addEventListener('scroll', function() {
+    const offset = window.scrollY;
+    if (offset > 560) {
+        header.style.height = `103px`;
+        imgLogo.style.width = `133px`;
+        imgLogo.style.height = `68px`;
+        imgLogo.style.top = `-25px`;
+        imgLogo.style.left = `560px`;
+    }
+})
 const logo = document.getElementById('img-logo');//agarro el logo
 
 const imgLogo = document.getElementById('img-logo');
@@ -312,18 +324,31 @@ window.addEventListener('scroll', function () {
         if (newLeft < 580) {//ajusto izquierda, que no sea menos de 574
             imgLogo.style.left = `${newLeft}px`;
         }
-    } else {
-        //ajustarHeader();
     }
     if (newHeightHeader >= 103) {//para ajustar el tamaño del header
         header.style.height = `${newHeightHeader}px`;
     }
+    console.log(offset);
     // Limita el tamaño mínimo de la imagen
 });
+
 /*------------------------------------------CONSIGNA 11(cards 3d)---------------------------*/
 
+/*----------------------------------------CONSIGNA 3(aparicion elementos menu)*/
 
 
+const observerItemsMenu = new IntersectionObserver((entries) => {//se ejecuta cada vez que la visibilidad de un objeto cambia
+    entries.forEach((entry) => {//usa foreach porque pueden ser varios elementos
+        if (entry.isIntersecting) {//si ese objeto es visible le cambia la clase a show
+            entry.target.classList.add('showItems');
+        } else {
+            entry.target.classList.remove('showItems');
+        }
+    });
+});
+
+const itemsMenu = document.querySelectorAll('.items'); //agarro todos los elementos con la clase hidden
+itemsMenu.forEach((el) => observerItemsMenu.observe(el));//observa todos los elementos hiddenElements
 
 
 

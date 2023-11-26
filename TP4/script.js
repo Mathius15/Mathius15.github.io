@@ -391,4 +391,41 @@ const itemsMenu = document.querySelectorAll('.items'); //agarro todos los elemen
 itemsMenu.forEach((el) => observerItemsMenu.observe(el));//observa todos los elementos hiddenElements
 
 
+/*-----------------------------------------CONSIGNA 4---------------------*/
+window.addEventListener('scroll', function () {
+    const img1 = document.getElementById('mas-amigos1');//selecciono las 4 imagenes
+    const img2 = document.getElementById('mas-amigos2');
+    const img3 = document.getElementById('mas-amigos3');
+    const img4 = document.getElementById('mas-amigos4');
+    const offset = window.scrollY;
+    if (offset > 3960 && offset < 4300) {//si esta en el rango ese, muestro la imagen 1
+        img1.style.opacity = '1';
+    } else {
+        img1.style.opacity = '0';
+    }
 
+    if (offset > 4300 && offset < 4800) {//si esta en el rango ese, muestro la imagen 2 y borro la 1
+        img2.style.opacity = '1';
+    } else {
+        img2.style.opacity = '0';
+    }
+
+    if (offset > 4800 && offset < 5300) {//si esta en el rango ese, muestro la imagen 3 y borro la 2
+        img3.style.opacity = '1';
+    } else {
+        img3.style.opacity = '0';
+    }
+
+    if (offset > 5300 && offset < 5500) {//si esta en el rango ese, muestro la imagen 4 y borro la 3
+        img4.style.opacity = '1';
+    } else {
+        img4.style.opacity = '0';
+    }
+
+    if (offset < 3995){//esto es para que desaparezcan de una al salir
+        img1.style.transition = 'none';
+        img1.style.opacity = '0';
+    } else{
+        img1.style.transition = 'all 0.5s ease-in';
+    }
+})

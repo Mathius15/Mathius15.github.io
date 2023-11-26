@@ -332,6 +332,7 @@ html {
   transform: rotate(-13.078deg);
   flex-shrink: 0;
   position: absolute;
+  z-index: 4;
 }
 
 #race2 {
@@ -341,6 +342,8 @@ html {
   height: 325.787px;
   transform: rotate(-26.474deg);
   position: absolute;
+  z-index: 4;
+
 }
 #race3 {
   top: 298px;
@@ -350,6 +353,7 @@ html {
   transform: rotate(-36.016deg);
   flex-shrink: 0;
   position: absolute;
+  z-index: 4;
 }
 /*--------------------------------------VENGADORES(quinto container)---------------------------------------*/
 #txt-vengadores {
@@ -431,26 +435,34 @@ html {
   flex-shrink: 0;
 }
 #mas-amigos1 {
-  top: 4213px;
+  top: 150px;
   left: 104px;
-  position: absolute;
+  position: fixed;
+  transition: all 0.5s ease-in;
+  opacity: 0;
 }
 
 #mas-amigos2 {
-  top: 4616px;
+  top: 150px;
   left: 108px;
-  position: absolute;
+  position: fixed;
+  opacity: 0;
+  transition: all 0.5s ease-in;
 }
 
 #mas-amigos3 {
-  top: 5042px;
+  top: 150px;
   left: 100px;
-  position: absolute;
+  position: fixed;
+  opacity: 0;
+  transition: all 0.5s ease-in;
 }
 #mas-amigos4 {
-  top: 5555px;
+  top: 150px;
   left: 104px;
-  position: absolute;
+  position: fixed;
+  opacity: 0;
+  transition: all 0.5s ease-in;
 }
 
 #mas-amigos h1,
